@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Amatic+SC&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ 
+body{
+    background-image: url(image/wall.jpeg);
+    
+     
+}
+
+h3{
+    color: blue;
+    
+}
+#back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    border: 3px solid #333;
+    border-radius: 50%;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color;
+}
+
+#back-to-top-btn:hover, #back-to-top-btn:focus{
+    background-color: #333;
+    color: #fff;
+}
+
+/* Animations */
+.btnEntrance {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: btnEntrance;
+  }
+  /* zoomIn */
+  /* @keyframes btnEntrance { 
+    from {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    to {
+      opacity: 1;
+    }    
+  } */
+  
+  /* fadeInUp */
+  @keyframes btnEntrance {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .btnExit {
+    animation-duration: 0.25s;
+    animation-fill-mode: both;  
+    animation-name: btnExit;
+  }
+  /* zoomOut */
+  /* @keyframes btnExit {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  } */
+  
+  /* fadeOutDown */
+  @keyframes btnExit {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+  .navbar-brand{
+    cursor: pointer;
+    margin: 0.3em;
+     
+
+}
+
+img{
+    width:10vw;
+    padding: 0.5em;
+}
+
+.navbar{
+    position: fixed;
+    top: 0px;
+    margin: 0;
+    width: 12vw;
+    height: 100%;
+    z-index: 1;
+    font-family:'Amatic SC', cursive;
+   
+     
+    
+
+}
+
+li a {
+    display: block;
+    color: rgb(15, 15, 11);
+    text-decoration: none;
+    padding: 1.5vw;
+    font-size: 1.5vw;
+    font-family: 'Alegreya', serif;
+    color: #070706;
+
+}
+/* Change the link color on hover */
+
+li a:hover {
+    background-color: rgb(202, 23, 23);
+    color: white;
+    border-radius: 2vw;
+    font-family:'Amatic SC', cursive;
+}
+  
+#pag{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+   
+} 
+
+.container{
+    width: 83vw;
+    height: 100vh;
+    margin-top: 0; 
+    margin-bottom: 0;
+    background-color: rgb(245, 245, 245); 
+    opacity: 0.80;
+    border-radius: 1.2em;
+    margin-left: 12vw;
+    margin-right: 12vw;
+   
+}  
+ 
+#meniu{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    padding: 3vw;
+}
+h3{
+    font-size: 2vw;
+    color: blue;
+    padding: 1vw;
+    font-family:'Amatic SC', cursive;
+}
+
+p{
+    font-size: 1vw;
+    font-family: 'Alegreya', serif;
+ 
+}
